@@ -102,13 +102,16 @@ img {
   margin-left: auto;
 }
 
-.icon-mail {
+.contact-icon {
  margin-right: 10px;
+  fill: currentColor;
 }
 
-.icon-tel {
-  margin-right: 10px;
-}
+/* .contact-link:hover,
+.contact-icon:focus {
+  fill: var(--hover-color);
+} */
+
 
 .contact-item {
   display: flex;
@@ -120,16 +123,21 @@ img {
 }
 
 .contact-header {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--link-color);
+display: flex;
+  align-items: center;
+   color: var(--link-color);
 }
 
 .contact-header:hover,
 .contact-header:focus {
   color: var(--hover-color);
+}
+
+.contact-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 /* основной контент */
@@ -330,29 +338,28 @@ img {
 margin-right: 0;
 }
 
-
-.social-icon {
-  padding: 12px;
-    width: 44px;
-  height: 44px;
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ padding: 12px;
+  border-radius: 50%;
   fill: #AFB1B8;
 }
 
+
+.social-link:hover,
+.social-link:focus {
+  background-color: #2196F3;
+  fill: #ffffff
+}
 .social-icon:hover,
 .social-icon:focus {
-  border-radius: 50%;
-  background-color: #2196F3;
   fill: #ffffff
 }
 
 /* клиенты */
 
-.clients-list {
-  display: flex;
-  justify-content: center;
-  
-  
-}
 
 .clients-section {
   padding-top: 94px;
@@ -360,6 +367,10 @@ margin-right: 0;
   text-align: center;
 }
 
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
 
 .clients-title {
 font-weight: 700;
@@ -378,29 +389,22 @@ margin-bottom: 50px;
   border-radius: 4px;
   padding: 16px 32px;
 
+  fill: #AFB1B8;
 }
 
 .clients-item:last-child {
   margin-right: 0;
 }
 
-
-.clients-icon {
-  margin: 0;
-  width: 106px;
-  height: 60px;
-  fill: #AFB1B8;
-}
-
-.clients-icon:hover,
-.clients-icon:focus {
-fill: #2196F3;
-
-}
-
 .clients-item:hover,
 .clients-item:focus {
-border-color: #2196F3;
+border-color: var(--hover-color);
+fill: var(--hover-color)
+}
+
+.clients-icon {
+  width: 106px;
+  height: 60px;
 }
 
 /* подвал */
@@ -484,18 +488,22 @@ margin-bottom: 20px;
 margin-right: 0;
 }
 
-
-.socials-icon {
-  border-radius: 50%;
+.socials-link {
+ border-radius: 50%;
   background-color:rgba(255, 255, 255, 0.1);
   padding: 12px;
-    width: 44px;
-  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   fill: #ffffff
 }
 
-.socials-icon:hover,
-.socials-icon:focus {
+.socials-icon {
+ 
+}
+
+.socials-link:hover,
+.socials-link:focus {
   
   background-color: #2196F3;
   fill: #ffffff

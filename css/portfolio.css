@@ -100,13 +100,16 @@ h1, h2, h3, p, ul{
   margin-left: auto;
 }
 
-.icon-mail {
+.contact-icon {
  margin-right: 10px;
+  fill: currentColor;
 }
 
-.icon-tel {
-  margin-right: 10px;
-}
+/* .contact-link:hover,
+.contact-icon:focus {
+  fill: var(--hover-color);
+} */
+
 
 .contact-item {
   display: flex;
@@ -118,11 +121,9 @@ h1, h2, h3, p, ul{
 }
 
 .contact-header {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--link-color);
+display: flex;
+  align-items: center;
+   color: var(--link-color);
 }
 
 .contact-header:hover,
@@ -130,6 +131,12 @@ h1, h2, h3, p, ul{
   color: var(--hover-color);
 }
 
+.contact-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
 
 /* основной контент */
 
@@ -325,18 +332,22 @@ margin-bottom: 20px;
 margin-right: 0;
 }
 
-
-.socials-icon {
-  border-radius: 50%;
+.socials-link {
+ border-radius: 50%;
   background-color:rgba(255, 255, 255, 0.1);
   padding: 12px;
-    width: 44px;
-  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   fill: #ffffff
 }
 
-.socials-icon:hover,
-.socials-icon:focus {
+.socials-icon {
+ 
+}
+
+.socials-link:hover,
+.socials-link:focus {
   
   background-color: #2196F3;
   fill: #ffffff
